@@ -55,3 +55,16 @@ export zone="us-central1-c"
 gcloud container clusters get-credentials ${clustername} --zone ${zone} --project ${projectname} 
 
 ```
+### Deployment
+```
+A single pod can be deployed
+Pods can be deployed as a required number of replica
+```
+### Service
+```
+Pod can be deployed behind the loadbalancer with port binding to localhost
+```
+### Deamonsets
+```
+A specific pod will be deployed on every node of a cluster (Example: Node Exporter)
+```
