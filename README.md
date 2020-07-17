@@ -3,12 +3,11 @@
 
 ### Everything in kubernetes is a object
 
+## Create a Project:
 ```
 gcloud config set project ${projectname}
 ```
 # Example:
-## Create a Project:
-
 ```
 gcloud projects create navaneethreddy-dev
 gcloud projects create navaneethreddy-qa
@@ -37,19 +36,22 @@ gcloud container clusters get-credentials ${clustername} --zone us-central1-c --
 DEV:
 export clustername="kubernetesdeepdive-dev"
 export projectname="navaneethreddy-dev"
+export zone="us-central1-c"
 
-gcloud container clusters get-credentials ${clustername} --zone us-central1-c --project ${projectname} 
+gcloud container clusters get-credentials ${clustername} --zone ${zone} --project ${projectname} 
 
 QA:
 export clustername="kubernetesdeepdive-qa"
 export projectname="navaneethreddy-qa"
+export zone="us-central1-c"
 
-gcloud container clusters get-credentials ${clustername} --zone us-central1-c --project ${projectname} 
+gcloud container clusters get-credentials ${clustername} --zone ${zone} --project ${projectname} 
 
 PROD:
 export clustername="kubernetesdeepdive-prod"
 export projectname="navaneethreddy-prod"
+export zone="us-central1-c"
 
-gcloud container clusters get-credentials ${clustername} --zone us-central1-c --project ${projectname} 
+gcloud container clusters get-credentials ${clustername} --zone ${zone} --project ${projectname} 
 
 ```
